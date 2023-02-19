@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci & Facrorial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Lato', sans-serif;">
+    <h1 id="fact" style="font-size:medium"></h1>
+    <hr>
+    <h1 id="fib" style="font-size:medium"></h1>
+    <script>
+        const fact = document.getElementById('fact');
+        var a = 5
+        ans = 1
+        if (a == 0) {
+            ans = 1
+                `The factorial of ${a} is ${ans}`
+        }
+        else {
+            for (i = 1; i <= a; i++) {
+                ans = ans * i;
+            }
+            fact.innerHTML = ` The factorial of ${a} is ${ans}`;
+        }
+
+        const fib = document.getElementById('fib')
+
+        var b = 10;
+        var ans1
+        if (b == 0) {
+            fib.innerHTML = `The fibonacci value of ${b} is 0`
+        }
+        else if (b == 1) {
+            fib.innerHTML = `The fibonacci value of ${b} is 1`
+        }
+        else {
+            var f1 = 0, f2 = 1;
+            for (i = 2; i <= b; i++) {
+                ans1 = f1 + f2;
+                f1 = f2;
+                f2 = ans1;
+                fib.innerHTML = `The fibonacci value of ${b} is ${ans1}`
+            }
+        }
+
+    </script>
+</body>
+
+</html>
