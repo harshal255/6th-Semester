@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Tags</title>
+</head>
+
+<body style="display:flex; justify-content: space-evenly; text-align: center; ">
+
+    <div>
+        <h4>SVG Circle</h4>
+        <svg width="160" height="160">
+            <linearGradient id="grad1" x1="0%" y1="50%" x2="100%" y2="80%">
+                <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(0, 255, 115);stop-opacity:1" />
+            </linearGradient>
+            <circle r="70" cx="70" cy="70" stroke-width="2" stroke="orange" fill="url(#grad1)"></circle>
+        </svg>
+    </div>
+    <div>
+        <h4>Svg Rectangle</h4>
+        <svg width="200" height="100">
+            <linearGradient id="grad2" x1="40%" y1="80%" x2="70%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(0, 255, 115);stop-opacity:1" />
+            </linearGradient>
+            <rect width="200" height="100" stroke="blue" stroke-width="4" fill="url(#grad2)" />
+        </svg>
+    </div>
+    <div>
+
+        <h4>Svg Rectangle with radius</h4>
+        <svg width="200" height="100" style="border:1px solid black ; border-radius:20px;">
+            <linearGradient id="grad3" x1="10%" y1="80%" x2="70%" y2="90%">
+                <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(0, 255, 115);stop-opacity:1" />
+            </linearGradient>
+            <rect width="200" height="100" stroke="none" fill="url(#grad3)" />
+        </svg>
+    </div>
+    <div>
+
+        <h4>star using svg</h4>
+
+        <svg height="210" width="500">
+            <polygon points="100,10 40,198 190,78 10,78 160,198"
+                style="fill:url(#grad2);stroke:url(#grad3);stroke-width:5;fill-rule:evenodd;" />
+        </svg>
+    </div>
+
+
+    <div>
+        <h4>logo using svg tag</h4>
+        <svg width="200" height="200" style="border:5px solid black ; border-radius:75px;">
+            <linearGradient id="grad4" x1="10%" y1="80%" x2="70%" y2="90%">
+                <stop offset="0%" style="stop-color:rgb(255, 0, 200);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(0, 229, 255);stop-opacity:1" />
+            </linearGradient>
+            <rect width="200" height="200" stroke="none" fill="url(#grad4)" />
+
+            <polygon points="100 30, 170 160, 30 160"></polygon>
+
+
+            <linearGradient id="grad5" x1="70%" y1="90%" x2="10%" y2="80%">
+                <stop offset="0%" style="stop-color:rgb(255, 0, 200);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(0, 229, 255);stop-opacity:1" />
+            </linearGradient>
+            <circle r="35" cx="100" cy="120" fill="url(#grad5)">
+            </circle>
+            <text x="85" y="135" font-size="3rem" fill="black">H</text>
+
+        </svg>
+    </div>
+
+
+</body>
+
+</html>

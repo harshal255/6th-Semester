@@ -20,14 +20,14 @@ ctxB.stroke();
 var canvasC = document.getElementById("canvas-c");
 var ctxC = canvasC.getContext("2d");
 ctxC.font = "20px Arial";
-ctxC.fillText("Hello,Harshal Kahar!", 20, 100);
+ctxC.fillText("Hello,Smit!", 20, 100);
 
 // Question 4
 
 var canvasD = document.getElementById("canvas-d");
 var ctxD = canvasD.getContext("2d");
 ctxD.font = "20px Arial";
-ctxD.strokeText("Hello,Harshal Kahar !", 20, 100);
+ctxD.strokeText("Hello,Smit!", 20, 100);
 
 // Question 5
 
@@ -58,6 +58,6 @@ var ctxG = canvasG.getContext("2d");
 var imgG = new Image();
 imgG.onload = function () {
     // Draw the image at the size of the canvas
-    ctxG.drawImage(imgG, 0, 0, 500, 270);
+    ctxG.drawImage(imgG, 10, 50, 500, 270);
 };
 imgG.src = "https://res.cloudinary.com/dlsxq98fr/image/upload/v1676813902/compress_burning_desier_nszpbm.jpg";

@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.main {
+    width: 50vw;
+    height: 100vh;
+    margin: 20px auto;
+    border: 2px solid green;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.main>:first-child {
+    border: 2px solid red;
+    width: 35%;
+    text-align: center;
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main>:last-child {
+    width: 65%;
+    border: 2px solid blue;
+}
+
+.img {
+    border: 2px solid green;
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+    margin-top: 25px;
+
+}
